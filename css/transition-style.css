@@ -1,0 +1,138 @@
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slidePx {
+    from {
+        opacity: 0;
+        transform: translateX(-350px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideNx {
+    from {
+        opacity: 0;
+        transform: translateX(350px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidePy {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideNy {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes Rotate {
+    from {
+        opacity: 0;
+        transform: rotate(35deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+
+
+
+#blockSide {
+    animation: slidePx 0.5s linear;
+
+}
+
+#blockSide1,
+#chooseU1 {
+    animation: slidePx 0.7s linear;
+
+}
+
+#blockSide2,
+#chooseU2 {
+    animation: slidePx 0.9s linear;
+
+}
+
+#block, #majorMsg {
+    animation: appear 1s ease-in-out;
+    /* animation-timeline: view(); */
+    /* animation-range: entry 0% cover 40%; */
+}
+
+#blockD, .category-card {
+    animation: slidePy linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+
+}
+
+#blockU {
+    animation: slideNy 0.3s linear;
+}
+
+#blockD_Auto {
+    animation: slidePy 0.6s linear;
+}
+
+#blockL {
+    animation: slidePx linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+#blockR {
+    animation: slideNx linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
+}
+
+#rotBlk {
+    animation: Rotate linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+
+}
+
+.category-card {
+    animation: slidePy 0.6s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFA | Dashboard</title>
+    
+    <link rel="shortcut icon" href="../assets/Favicon.png" type="image/png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/transition-style.css">
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+
+    <div class="main-nav" id="block">
+        <div class="nav">
+            <div class="logo">
+                <h2>PFA</h2>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li id="HomeLink"><a href="../index.html">Home</a></li>
+                    <li class="active" id="dashBordLink"><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="About-us.html">About us</a></li>
+                    <li><a href="Why.html">Why?</a></li>
+                    <li><a href="Contact-page.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="cta">
+                <!-- <a href="/Pages/login.html" class="sign">Sign in</a> -->
+                <a href="choose-Login.html" class="register">Sign In</a>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+    <!-- body part -->
+    <div class="wlcmMsgContainer">
+        <div class="msgBox" id="block">
+            <h2 id="block">Welcome</h2>
+            <p class="nameWlcm" id="wlcmName">.</p>
+            <p id="block">Glad you're here! Taking care of your well-being is key.Remember, reaching out is a strength.
+                Explore the
+                options below for support</p>
+            <br>
+            <hr>
+        </div>
+        <img src="../assets/high five.gif" alt="welcome" id="block">
+
+    </div>
+
+
+
+
+    <div class="profileBox" id="block">
+        <div id="userProfile">
+            <p class="headText"><strong>PROFILE</strong></p>
+            <p class="Loutbtn" id="block"><button id="logoutBtn">Logout</button></p>
+
+            <div id="fst_p">
+                <p id="stdName"><span id="userName"></span></p>
+                <p><span id="userRoll"></span></p>
+            </div>
+
+            <p id="snd_p"><span class="labeld">Department</span> <br> <span id="userDept"></span></p>
+            <p id="trd_p"><span class="labeld">Mob No.</span> <br> <span id="userPhone"></span></p>
+            <p id="four_p"><span class="labeld">Email</span> <br> <span id="userEmail"></span></p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="categoryBox" id="blockD">
+        <p class="headText" id="blockD"><strong>COUNSELING CATEGORY</strong></p>
+        <p id="hint">Select a counselling you prefer to take.</p>
+        <div class="cards">
+            <div id="categories" class="categories-container">
+                <!-- Counseling options to be added here through js-->
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <!-- bot script -->
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+
+    <script type="module" src="../../bot-embeding.js"></script>
+
+
+
+    <script type="module" src="../js/dashboard.js"></script>
+    <script type="module" src="../js/login_Check.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFA | Admin Login</title>
+    
+    <link rel="shortcut icon" href="../assets/Favicon.png" type="image/png">
+    
+    <!-- style -->
+    <link rel="stylesheet" href="../css/admin-styles.css">
+    <link rel="stylesheet" href="../css/transition-style.css">
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- iocn -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+
+    <script type="module" src="../js/admin-login.js"></script>
+</head>
+
+<body style="background: #fcfcfe;">
+    <div class="back" id="blockSide">
+        <a href="../index.html"><span id="backHome"><span
+                    class="material-symbols-rounded">arrow_back</span>PFA</span></a>
+    </div>
+
+
+
+    <div class="signup_form">
+        <div class="container">
+            <div class="main">
+                <div class="form_img">
+                    <img src="/assets/admin.gif" alt="image">
+                </div>
+                <div class="content">
+                    <h2>Admin Login</h2>
+                    <form id="adminLoginForm">
+                        <input type="email" id="adminEmail" placeholder="Admin Email" required>
+                        <input type="password" id="adminPassword" placeholder="Password" required>
+                        <button type="submit">Log in</button>
+                    </form>
+
+                    <p class="endline">Not an admin? <a href="login.html">Go to Student Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="../js/admin-auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PFA | Questionnaire</title>
+    
+    <link rel="shortcut icon" href="../assets/Favicon.png" type="image/png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/transition-style.css" />
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <!-- icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="main-nav" id="blockU">
+        <div class="nav">
+            <div class="logo">
+                <h2>PFA</h2>
+            </div>
+            <div class="cta">
+                <a href="dashboard.html" class="exitLnk">
+                    <span class="material-symbols-rounded">exit_to_app</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" >
+        <h2 class="blockD_Auto" id="categoryTitle">Loading Category...</h2>
+        <p class="blockD_Auto" id="helpTxt">please wait...</p>
+        <form id="questionForm" class="blockD_Auto">
+            <div id="questionsContainer"></div>
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <div id="resultMessage"></div>
+    </div>
+
+    <script type="module" src="../js/questionnaire.js"></script>
+</body>
+
+</html>

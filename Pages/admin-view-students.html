@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFA-Admin | Students Info</title>
+    
+    <link rel="shortcut icon" href="../assets/Favicon.png" type="image/png">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/admin-styles.css">
+    <link rel="stylesheet" href="../css/transition-style.css">
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+</head>
+
+<body>
+
+    <div class="admin-container">
+        <!-- navbar -->
+        <div class="main-nav" >
+            <h2>PFA | <span>Admin Panel</span></h2>
+            <div class="actions">
+                <nav class="sidebar">
+                    <ul class="nav-links">
+                        <li><a href="admin-dashboard.html">Dashboard</a></li>
+                        <li><a id="active" href="admin-view-students.html">View Students</a></li>
+                        <li><a href="admin-add-student.html">Add Student</a></li>
+                        <li><a href="admin-results.html">Response Data</a></li>
+                    </ul>
+                </nav>
+                <!-- <a class="setting" href="admin-settings.html">Settings</a> -->
+                <div class="notification-container">
+                    <span class="material-symbols-outlined" class="notify" id="notificationBell">notifications</span>
+                    <span id="notificationBadge" class="badge" style="display: none; color: transparent;">0</span>
+                    <div id="notificationList" class="notification-list" style="display: none;"></div>
+                  </div>
+                <button id="logoutBtn">Log out</button>
+            </div>
+        </div>
+
+        
+        
+        <!-- body-contant -->
+        <main class="content" id="block">
+            <h2 id="pageTtl">View Students</h2>
+            <hr>
+            <div class="refContainer">
+                <input type="text" id="searchStudent" placeholder="Search by name, roll number, or department">
+                <!-- <button onclick="fetchStudents()" id="refresh"><span class="material-symbols-outlined">
+                        refresh
+                    </span></button> -->
+            </div>
+
+            <div class="tblContiner" id="block">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="7%">Sl no.</th>
+                            <th width="15%">Roll No</th>
+                            <th width="24%">Name</th>
+                            <th width="22%">Email</th>
+                            <th width="17%">Department</th>
+                            <th width="15%">Registered</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentsTable">
+                        <!-- Student rows will be inserted here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+
+
+<!-- Edit Student Modal -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3>Edit Student Info</h3>
+      <form id="editForm">
+        <label>RollNo</label>
+        <input type="text" id="editRollNo" readonly>
+        <label>Name</label>
+        <input type="text" id="editName" required>
+        <label>Department</label>
+        <input type="text" id="editDepartment" required>
+        <label>Mobile No.</label>
+        <!-- <input type="text" id="editPhone" required> -->
+        <input type="tel" id="editPhone" required pattern="[0-9]{10}" maxlength="10">
+        <label>Email</label>
+        <input type="text" id="editEmail" required>
+        <div class="modal-buttons">
+          <button type="submit" id="saveEdit">Save Changes</button>
+          <button type="button" id="cancelEdit">Discard</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+
+  <hr style="background: black;" id="block">
+  <br>
+  
+    <script type="module" src="../js/admin-view-students.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PFA | Counseling page</title>
+  
+  <link rel="shortcut icon" href="../assets/Favicon.png" type="image/png">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/transition-style.css">
+
+  <!-- font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+<body>
+  <div class="body">
+    <div class="containt">
+      <div class="return" id="blockSide">
+        <a href="dashboard.html"><span id="goBack" class="material-symbols-rounded">arrow_back</span></a>
+      </div>
+
+      <div class="titleContainer" id="block">
+        <h4 id="cunclSug">Counseling Suggestion</h4>
+        <p id="counselingMessage"></p>
+      </div>
+
+
+
+      <div id="chatbotSection" style="display: none;">
+        <h2 id="block">Chat with our Assistant</h2>
+      </div>
+
+
+
+      <div id="actionSection" style="display: none;">
+        <h2 id="majorMsg">We’ve informed your HOD<br>Your counselling session will be arranged ASAP.</h2>
+        <p>Until then stay connected with your Loved once &<br>talk with them. </p>
+      </div>
+
+
+
+
+    </div>
+    <div class="FooterContainer">
+      <div class="footer" id="block">
+        <div class="footerTxt">
+          <div class="blockD_Auto" id="left">
+            <p id="srtPara1">Still fill anxious!<br>
+              have a good talk with your Loved ones</p>
+            <h3>Contact US</h3>
+            <hr>
+            <!-- <p id="srtPara2">Do not hesitate to connect with us either “We are always ears “</p> -->
+          </div>
+          <div class="blockD_Auto" id="right">
+            <p id="srtPara2">Do not hesitate to connect with us either “We are always ears</p>
+            <hr>
+          </div>
+        </div>
+
+        <div class="footerContactInfo" id="block">
+          <div id="contactInfoCT" style="display: none;">
+            <!-- <h4>Class Teacher</h4>
+            <p>Have a chat with your class teacher.</p>
+            <div class="contact">
+              <div><span class="material-symbols-rounded">phone_in_talk</span><a href="tel:+91-9865324875">+91-98653 24875</a></div>
+              <div><span class="material-symbols-rounded">send</span><a href="mailto:teacher@mail.com">Send an email</a>
+              </div>
+            </div> -->
+          </div>
+          <div id="contactInfoHOD">
+            <!-- <h4>HOD</h4>
+            <p>Connect with your HOD</p>
+            <div class="contact">
+              <div><span class="material-symbols-rounded">phone_in_talk</span><a href="tel:+91-9784653154">+91-97846 53154</a></div>
+              <div><span class="material-symbols-rounded">send</span><a href="mailto:Hod@mail.com">Send an email</a>
+              </div>
+            </div> -->
+          </div>
+          <div id="contactInfoDC">
+            <!-- Contact details will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- bot script -->
+  <style>
+    iframe {
+      display: flex;
+      justify-self: anchor-center;
+      align-self: anchor-center;
+      margin-top: 100px;
+    }
+  </style>
+
+
+<!-- bot script -->
+
+
+<script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+
+<script type="module" src="../bot-embeding.js"></script>
+
+
+
+  <script type="module" src="../js/counseling.js"></script>
+</body>
+
+</html>
